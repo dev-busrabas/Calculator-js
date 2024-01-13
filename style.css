@@ -1,0 +1,75 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0px;
+}
+.calculator {
+    width: 500px;
+    box-shadow:
+     rgba(0, 0, 0, 0.25) 0px 54px 55px,
+     rgba(0, 0, 0, 0.12) 0px -12px 30px,
+     rgba(0, 0, 0, 0.12) 0px 4px 6px, 
+     rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+     rgba(0, 0, 0, 0.09) 0px -3px 5px;
+     border-radius: 12px;
+}
+.calculatorTitle{
+    background-color: chocolate;
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+    text-align: right;
+}
+.calculatorTitle h1{
+    margin: 0px;
+    padding: 25px;
+    font-size: 45px;
+    font-weight: 100;
+    overflow-x: auto;
+}
+
+.calculatorButtons{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 10px;
+ }
+.result{
+    grid-row-start: 2;
+    grid-row-end: 6;
+    grid-column-start: 4;
+    grid-column-end: 5;
+}
+button{
+    border: none;
+    padding: 20px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+}
+.operator{
+    background: gray;
+    color: white;
+    font-size: 30px;
+}
+
+.reset{
+    background: red;
+    color: white;
+}
+button:hover{
+    background: pink;
+}
+.reset:hover{
+    background: lightcoral;
+}
+.result{
+background: green;
+}
+.result:hover{
+    background: lightgreen;
+}
